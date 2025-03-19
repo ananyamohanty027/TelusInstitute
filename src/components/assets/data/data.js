@@ -40,7 +40,6 @@ export const LinkData = [
     url: "/certificate",
   },
 ]
-
 export const courses = [
   {
     id: 1,
@@ -144,7 +143,7 @@ export const reviews = [
     image:
       'https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     name: 'Ayush Gupta',
-    text: `TelusInstitute's Python Programming course helped me switch my career to software development. The mentors were incredibly supportive, and the course material was up-to-date with industry standards.`,
+    text: 'TelusInstitute’s Python Programming course helped me switch my career to software development. The mentors were incredibly supportive, and the course material was up-to-date with industry standards.',
   },
   {
     id: 5,
@@ -231,6 +230,8 @@ export const instructors = [
     rating: 4.5,
     photo: "https://randomuser.me/api/portraits/men/1.jpg",
     subject: "Mathematics",
+    experience: 10,
+    hoursTaught: 5000,
   },
   {
     id: 2,
@@ -238,6 +239,8 @@ export const instructors = [
     rating: 5,
     photo: "https://randomuser.me/api/portraits/women/2.jpg",
     subject: "Physics",
+    experience: 8,
+    hoursTaught: 4000,
   },
   {
     id: 3,
@@ -245,6 +248,8 @@ export const instructors = [
     rating: 4,
     photo: "https://randomuser.me/api/portraits/men/3.jpg",
     subject: "Computer Science",
+    experience: 6,
+    hoursTaught: 3000,
   },
   {
     id: 4,
@@ -252,6 +257,8 @@ export const instructors = [
     rating: 4.7,
     photo: "https://randomuser.me/api/portraits/women/4.jpg",
     subject: "Chemistry",
+    experience: 8,
+    hoursTaught: 4000,
   },
   {
     id: 5,
@@ -259,6 +266,8 @@ export const instructors = [
     rating: 4.2,
     photo: "https://randomuser.me/api/portraits/women/5.jpg",
     subject: "Biology",
+    experience: 8,
+    hoursTaught: 9000,
   },
   {
     id: 6,
@@ -266,5 +275,7 @@ export const instructors = [
     rating: 4.8,
     photo: "https://randomuser.me/api/portraits/men/6.jpg",
     subject: "Economics",
+    experience: 10,
+    hoursTaught: 10000,
   },
 ];

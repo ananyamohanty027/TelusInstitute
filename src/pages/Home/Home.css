@@ -1,49 +1,51 @@
+/* Home.css */
 @keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
   }
-  
-  @keyframes fadeInRight {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
-  
-  .animate-fadeInLeft {
-    animation: fadeInLeft 1s ease-in-out;
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  .animate-fadeInRight {
-    animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  
-  .animate-pulse {
-    animation: pulse 2s infinite;
+  50% {
+    transform: scale(1.05);
   }
-  /* Home.css */
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-fadeInLeft {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Ensure smooth transitions for transform properties */
 .transition-transform {
   transition-property: transform;
 }
