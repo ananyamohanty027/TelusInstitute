@@ -1,0 +1,222 @@
+.certificate-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.form-section {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.form-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #2d80f5;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1c6cd4;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Certificate Styles */
+.certificate-section {
+    margin-top: 40px;
+}
+
+.certificate {
+    background: white;
+    padding: 40px;
+    border: 20px solid #2d80f5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 100%;
+}
+
+.certificate-content {
+    text-align: center;
+    position: relative;
+}
+
+.certificate-header {
+    margin-bottom: 40px;
+}
+
+.certificate-header h1 {
+    font-size: 48px;
+    color: #2d80f5;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.certificate-body {
+    margin: 40px 0;
+}
+
+.certificate-text {
+    font-size: 20px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.student-name {
+    font-size: 36px;
+    color: #333;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.course-name {
+    font-size: 28px;
+    color: #2d80f5;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.certificate-id {
+    font-size: 16px;
+    color: #666;
+    margin-top: 30px;
+}
+
+.issue-date {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.certificate-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.signature {
+    text-align: center;
+}
+
+.signature-line {
+    width: 200px;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 10px;
+}
+
+.print-button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #28a745;
+}
+
+.print-button:hover {
+    background-color: #218838;
+}
+
+.certificate-wrapper {
+    background: white;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 700px;
+    position: relative;
+}
+
+@media print {
+    @page {
+        size: landscape;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+    
+    .certificate-wrapper,
+    .certificate-wrapper * {
+        visibility: visible;
+    }
+    
+    .certificate-wrapper {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .certificate {
+        border: 20px solid #2d80f5 !important;
+        padding: 40px !important;
+        margin: 0 !important;
+        height: 100%;
+        box-sizing: border-box;
+        page-break-after: avoid;
+        page-break-before: avoid;
+    }
+
+    .form-section,
+    .print-button {
+        display: none !important;
+    }
+
+    .certificate-content {
+        break-inside: avoid;
+    }
+} 

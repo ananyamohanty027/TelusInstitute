@@ -1,0 +1,78 @@
+
+course .box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+course .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid transparent;
+    border-radius: 10px;
+    /* background: linear-gradient(45deg, #ff0099, #ff6600, #ff0099); */
+    background-size: 200% 200%;
+    z-index: 1;
+    animation: glowingBorder 3s linear infinite;
+  }
+  
+  @keyframes glowingBorder {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Rotating Border Effect */
+  course .box::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    /* background: conic-gradient(
+      from 0deg,
+      transparent,
+      #ff0099,
+      #ff6600,
+      #ff0099,
+      transparent
+    ); */
+    z-index: 2;
+    animation: rotateBorder 4s linear infinite;
+  }
+  
+  @keyframes rotateBorder {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /* Inner White Background */
+  course .box .content {
+    position: relative;
+    z-index: 3;
+    background: white;
+    border-radius: 8px;
+    margin: 4px;
+  }
+  
+  /* Ensure the image and text are above the borders */
+  course .images, .text, .user, .flex {
+    position: relative;
+    z-index: 4;
+  }

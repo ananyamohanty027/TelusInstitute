@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4a3685a1.css",
+    "main.js": "/static/js/main.b50bd770.js",
+    "static/media/4.png": "/static/media/4.b7ce54d97f294b0c260d.png",
+    "static/media/1.png": "/static/media/1.22db030e07353a50cb4c.png",
+    "static/media/3.png": "/static/media/3.014f4e5db4ee799188bc.png",
+    "static/media/5.png": "/static/media/5.fb488d7683b12c246573.png",
+    "static/media/2.png": "/static/media/2.3847d5e5c0c4daeb7ddc.png",
+    "static/media/6.png": "/static/media/6.2e4d5115c2f23be8309d.png",
+    "static/media/back.png": "/static/media/back.56c1fa43892985a05070.png",
+    "static/media/logo-black.png": "/static/media/logo-black.e151e3898425bad59b40.png",
+    "static/media/hero.png": "/static/media/hero.9b01089c659f7255de8a.png",
+    "static/media/l2.jpg": "/static/media/l2.b0f4c7cf6d5de89fcb11.jpg",
+    "static/media/img.jpg": "/static/media/img.c0c521346232ef1a1167.jpg",
+    "static/media/about-banner.jpg": "/static/media/about-banner.b067014bb3db3a660123.jpg",
+    "static/media/about.jpg": "/static/media/about.00f6c4b34819688791fd.jpg",
+    "static/media/hero-shape-purple.png": "/static/media/hero-shape-purple.77f84f1d8433499cf9e3.png",
+    "index.html": "/index.html",
+    "static/media/blockquote.svg": "/static/media/blockquote.f8d50ddd1d5a0d9774e1e9f42c8d1730.svg",
+    "main.4a3685a1.css.map": "/static/css/main.4a3685a1.css.map",
+    "main.b50bd770.js.map": "/static/js/main.b50bd770.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a3685a1.css",
+    "static/js/main.b50bd770.js"
+  ]
+}

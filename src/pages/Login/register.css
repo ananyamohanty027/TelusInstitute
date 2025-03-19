@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Main container */
+.signup-container .wrapper {
+  min-height: 100vh;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(30px);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  background: url('../../components/assets/images/l2.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.signup-container .wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Input box styling */
+.signup-container .wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.signup-container .wrapper .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  outline: none;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px 20px;
+  transition: border-color 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.signup-container .wrapper .input-box input:focus {
+  border-color: #f0f0f0;
+}
+
+/* Label styling */
+.signup-container .wrapper .input-box label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.signup-container .wrapper .input-box input:focus + label,
+.signup-container .wrapper .input-box input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 20px;
+  font-size: 12px;
+  color: #f0f0f0;
+  background-color: transparent;
+  padding: 0 5px;
+}
+
+/* Icons in the input fields */
+.signup-container .wrapper .input-box .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Button styling */
+.signup-container .wrapper button {
+  width: 100%;
+  height: 45px;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  color: #333333;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signup-container .wrapper button:hover {
+  background-color: #a03a68;
+  transform: scale(1.05);
+}
+
+/* Link to login */
+.signup-container .wrapper .login-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.signup-container .wrapper .login-link p a {
+  color: crimson;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-container .wrapper .login-link p a:hover {
+  text-decoration: underline;
+}
+
+/* Password strength progress bar */
+.password-strength {
+  height: 5px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.password-strength.weak span {
+  display: block;
+  height: 100%;
+  width: 33%;
+  background: red;
+}
+
+.password-strength.medium span {
+  display: block;
+  height: 100%;
+  width: 66%;
+  background: orange;
+}
+
+.password-strength.strong span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: green;
+}
+
+/* Error text styling */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Password strength text */
+.strength-text {
+  font-size: 12px;
+  color: white;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Adjusted specific styles for email and confirm-password fields */
+.signup-container .wrapper .input-box.email {
+  margin: 30px 0;
+}
+
+.signup-container .wrapper .input-box.password-confirm {
+  margin: 30px 0;
+}
