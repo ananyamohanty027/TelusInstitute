@@ -8,12 +8,16 @@
   margin: 0;
   box-sizing: border-box;
 }
- body {
+
+body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
   color: #6d6e75;
   text-transform: capitalize;
+  line-height: 1.6; /* Improved readability */
 }
+
+/* Ensure links and lists are styled correctly */
 ul,
 li,
 a {
@@ -23,5 +27,5 @@ a {
   margin: 0;
   text-decoration: none;
   list-style: none;
+  color: inherit; /* Inherit text color */
 }
-
