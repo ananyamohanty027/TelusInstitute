@@ -1,6 +1,6 @@
 # Telus Institute AI-Driven Educational Platform
 
-Telus Institute is a web application designed to enhance digital learning through interactive courses and automated certificate issuance. The platform offers a modern UI for exploring course content and a robust backend for managing courses and certificates.
+Telus Institute is a web application designed to supplement digital learning through interactive courses and automated certificate issuance. The platform offers a modern UI for exploring course content and a robust backend for managing courses and certificates.
 
 ---
 
