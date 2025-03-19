@@ -81,7 +81,7 @@ Telus Institute is a web application designed to supplement digital learning thr
      ```
    - **Frontend:**
      ```bash
-     cd Telus_AI && npm start
+     npm start
      ```
    - Open [http://localhost:3000](http://localhost:3000) in your browser.
 
