@@ -21,7 +21,7 @@ Telus Institute is a web application designed to supplement digital learning thr
 
 - **Frontend**: React.js, Vite, Tailwind CSS
 - **Backend**: Node.js, Express.js
-- **Database**: MongoDB
+- **Database**: MongoDB, Atlas
 
 ---
 
